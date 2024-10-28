@@ -1,1 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+}
 
+h1, h2 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+p {
+    margin: 0 0 15px 0;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+    scroll-behavior: smooth; /* Smooth Scroll */
+}
+
+.navbar a:hover {
+    color: #FFD700;
+}
+
+/* Intro Section */
+#intro {
+    height: 500px;
+    background-image: url('images/Grand Canyon sunset view HD.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
+/* Button */
+.cta-button {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #333;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+}
+
+/* Section Styling */
+.content-box {
+    margin: 40px auto; /* Reduce margin to make the box smaller */
+    max-width: 750px; /* Reduce max-width for a smaller content box */
+    padding: 30px; /* Slightly reduce padding */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.content-box:hover {
+    transform: scale(1.05);
+}
+
+/* Image Styling */
+.section-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Fact Paragraph Styling */
+.content-box p {
+    font-size: 1.1em; /* Increase the font size for better readability */
+    line-height: 1.8; /* Add more line height for readability */
+    margin-bottom: 20px; /* Add spacing between facts */
+    color: #333; /* Darker color for better contrast */
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Footer Link Box Model */
+footer a {
+    color: #FFD700;
+    padding: 5px 10px;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+footer a:hover {
+    background-color: #FFD700;
+    color: #333;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .cta-button {
+        padding: 12px 20px;
+    }
+
+    .content-box {
+        max-width: 100%; /* Make the box full-width on smaller screens */
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
